@@ -35,6 +35,8 @@
 		7683BC4C17E7833B00B4D96D /* CNAPIEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683BC4B17E7833B00B4D96D /* CNAPIEngine.m */; };
 		7683BC4F17E783B500B4D96D /* CNAPIEngine+Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683BC4E17E783B500B4D96D /* CNAPIEngine+Person.m */; };
 		7683BC5217E783C800B4D96D /* CNAPIEngine+Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683BC5117E783C800B4D96D /* CNAPIEngine+Node.m */; };
+		7683BC5517E7864700B4D96D /* CNSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683BC5417E7864700B4D96D /* CNSignupViewController.m */; };
+		7683BC5817E786C200B4D96D /* CNHomeDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683BC5717E786C200B4D96D /* CNHomeDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +128,11 @@
 		7683BC4E17E783B500B4D96D /* CNAPIEngine+Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CNAPIEngine+Person.m"; sourceTree = "<group>"; };
 		7683BC5017E783C800B4D96D /* CNAPIEngine+Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CNAPIEngine+Node.h"; sourceTree = "<group>"; };
 		7683BC5117E783C800B4D96D /* CNAPIEngine+Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CNAPIEngine+Node.m"; sourceTree = "<group>"; };
+		7683BC5317E7864700B4D96D /* CNSignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSignupViewController.h; sourceTree = "<group>"; };
+		7683BC5417E7864700B4D96D /* CNSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSignupViewController.m; sourceTree = "<group>"; };
+		7683BC5617E786C200B4D96D /* CNHomeDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNHomeDataSource.h; sourceTree = "<group>"; };
+		7683BC5717E786C200B4D96D /* CNHomeDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNHomeDataSource.m; sourceTree = "<group>"; };
+		7683BC5917E787DE00B4D96D /* CNModelEntityDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNModelEntityDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,7 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				7683B7BB17E76AE100B4D96D /* Main.storyboard */,
-				7683B80817E77D8F00B4D96D /* Login */,
+				7683B80817E77D8F00B4D96D /* Signup && Login */,
 				7683B7FB17E7795A00B4D96D /* Me */,
 				7683B7FA17E7794F00B4D96D /* Touch */,
 				7683B7F917E7794500B4D96D /* Home */,
@@ -270,6 +277,8 @@
 			children = (
 				7683B7E717E76F4800B4D96D /* CNHomeViewController.h */,
 				7683B7E817E76F4800B4D96D /* CNHomeViewController.m */,
+				7683BC5617E786C200B4D96D /* CNHomeDataSource.h */,
+				7683BC5717E786C200B4D96D /* CNHomeDataSource.m */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -292,13 +301,15 @@
 			name = Me;
 			sourceTree = "<group>";
 		};
-		7683B80817E77D8F00B4D96D /* Login */ = {
+		7683B80817E77D8F00B4D96D /* Signup && Login */ = {
 			isa = PBXGroup;
 			children = (
 				7683B80917E77DA500B4D96D /* CNLoginViewController.h */,
 				7683B80A17E77DA500B4D96D /* CNLoginViewController.m */,
+				7683BC5317E7864700B4D96D /* CNSignupViewController.h */,
+				7683BC5417E7864700B4D96D /* CNSignupViewController.m */,
 			);
-			name = Login;
+			name = "Signup && Login";
 			sourceTree = "<group>";
 		};
 		7683B80C17E780DA00B4D96D /* Vendor */ = {
@@ -323,6 +334,7 @@
 		7683BC4417E782A800B4D96D /* Entitiy */ = {
 			isa = PBXGroup;
 			children = (
+				7683BC5917E787DE00B4D96D /* CNModelEntityDefines.h */,
 				7683B7FC17E7797D00B4D96D /* CNNode.h */,
 				7683B7FD17E7797D00B4D96D /* CNNode.m */,
 				7683B80517E77B0C00B4D96D /* CNPerson.h */,
@@ -501,8 +513,10 @@
 				7683B7EF17E76F6900B4D96D /* CNMeViewController.m in Sources */,
 				7683B7E917E76F4800B4D96D /* CNHomeViewController.m in Sources */,
 				7683B80717E77B0C00B4D96D /* CNPerson.m in Sources */,
+				7683BC5517E7864700B4D96D /* CNSignupViewController.m in Sources */,
 				7683B7BA17E76AE100B4D96D /* CNAppDelegate.m in Sources */,
 				7683B7F217E7722300B4D96D /* Model.xcdatamodeld in Sources */,
+				7683BC5817E786C200B4D96D /* CNHomeDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
