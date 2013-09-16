@@ -24,8 +24,8 @@
 		7683B7EC17E76F5A00B4D96D /* CNTouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683B7EB17E76F5A00B4D96D /* CNTouchViewController.m */; };
 		7683B7EF17E76F6900B4D96D /* CNMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683B7EE17E76F6900B4D96D /* CNMeViewController.m */; };
 		7683B7F217E7722300B4D96D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7683B7F017E7722300B4D96D /* Model.xcdatamodeld */; };
-		7683B7F517E777FF00B4D96D /* CNPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683B7F417E777FF00B4D96D /* CNPerson.m */; };
-		7683B7F817E7780000B4D96D /* CNNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683B7F717E7780000B4D96D /* CNNode.m */; };
+		7683B7FE17E7797D00B4D96D /* CNNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683B7FD17E7797D00B4D96D /* CNNode.m */; };
+		7683B80117E7797E00B4D96D /* CNPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683B80017E7797E00B4D96D /* CNPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,10 +63,10 @@
 		7683B7ED17E76F6900B4D96D /* CNMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNMeViewController.h; sourceTree = "<group>"; };
 		7683B7EE17E76F6900B4D96D /* CNMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNMeViewController.m; sourceTree = "<group>"; };
 		7683B7F117E7722300B4D96D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		7683B7F317E777FF00B4D96D /* CNPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNPerson.h; sourceTree = "<group>"; };
-		7683B7F417E777FF00B4D96D /* CNPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNPerson.m; sourceTree = "<group>"; };
-		7683B7F617E7780000B4D96D /* CNNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNNode.h; sourceTree = "<group>"; };
-		7683B7F717E7780000B4D96D /* CNNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNNode.m; sourceTree = "<group>"; };
+		7683B7FC17E7797D00B4D96D /* CNNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNNode.h; sourceTree = "<group>"; };
+		7683B7FD17E7797D00B4D96D /* CNNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNNode.m; sourceTree = "<group>"; };
+		7683B7FF17E7797E00B4D96D /* CNPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNPerson.h; sourceTree = "<group>"; };
+		7683B80017E7797E00B4D96D /* CNPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,11 +177,11 @@
 		7683B7E317E76BCC00B4D96D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7683B7FF17E7797E00B4D96D /* CNPerson.h */,
+				7683B80017E7797E00B4D96D /* CNPerson.m */,
+				7683B7FC17E7797D00B4D96D /* CNNode.h */,
+				7683B7FD17E7797D00B4D96D /* CNNode.m */,
 				7683B7F017E7722300B4D96D /* Model.xcdatamodeld */,
-				7683B7F617E7780000B4D96D /* CNNode.h */,
-				7683B7F717E7780000B4D96D /* CNNode.m */,
-				7683B7F317E777FF00B4D96D /* CNPerson.h */,
-				7683B7F417E777FF00B4D96D /* CNPerson.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -190,12 +190,9 @@
 			isa = PBXGroup;
 			children = (
 				7683B7BB17E76AE100B4D96D /* Main.storyboard */,
-				7683B7E717E76F4800B4D96D /* CNHomeViewController.h */,
-				7683B7E817E76F4800B4D96D /* CNHomeViewController.m */,
-				7683B7EA17E76F5A00B4D96D /* CNTouchViewController.h */,
-				7683B7EB17E76F5A00B4D96D /* CNTouchViewController.m */,
-				7683B7ED17E76F6900B4D96D /* CNMeViewController.h */,
-				7683B7EE17E76F6900B4D96D /* CNMeViewController.m */,
+				7683B7FB17E7795A00B4D96D /* Me */,
+				7683B7FA17E7794F00B4D96D /* Touch */,
+				7683B7F917E7794500B4D96D /* Home */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -214,6 +211,33 @@
 				7683B7C417E76AE100B4D96D /* Images.xcassets */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		7683B7F917E7794500B4D96D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7683B7E717E76F4800B4D96D /* CNHomeViewController.h */,
+				7683B7E817E76F4800B4D96D /* CNHomeViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		7683B7FA17E7794F00B4D96D /* Touch */ = {
+			isa = PBXGroup;
+			children = (
+				7683B7EA17E76F5A00B4D96D /* CNTouchViewController.h */,
+				7683B7EB17E76F5A00B4D96D /* CNTouchViewController.m */,
+			);
+			name = Touch;
+			sourceTree = "<group>";
+		};
+		7683B7FB17E7795A00B4D96D /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				7683B7ED17E76F6900B4D96D /* CNMeViewController.h */,
+				7683B7EE17E76F6900B4D96D /* CNMeViewController.m */,
+			);
+			name = Me;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,11 +339,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7683B7B617E76AE100B4D96D /* main.m in Sources */,
-				7683B7F517E777FF00B4D96D /* CNPerson.m in Sources */,
-				7683B7F817E7780000B4D96D /* CNNode.m in Sources */,
+				7683B7FE17E7797D00B4D96D /* CNNode.m in Sources */,
 				7683B7EC17E76F5A00B4D96D /* CNTouchViewController.m in Sources */,
 				7683B7EF17E76F6900B4D96D /* CNMeViewController.m in Sources */,
 				7683B7E917E76F4800B4D96D /* CNHomeViewController.m in Sources */,
+				7683B80117E7797E00B4D96D /* CNPerson.m in Sources */,
 				7683B7BA17E76AE100B4D96D /* CNAppDelegate.m in Sources */,
 				7683B7F217E7722300B4D96D /* Model.xcdatamodeld in Sources */,
 			);

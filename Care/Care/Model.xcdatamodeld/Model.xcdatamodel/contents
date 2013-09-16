@@ -5,8 +5,8 @@
         <attribute name="replyToNodeId" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="what" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="when" optional="YES" attributeType="Date" syncable="YES"/>
-        <relationship name="caringPeople" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CNPerson" syncable="YES"/>
-        <relationship name="who" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CNPerson" syncable="YES"/>
+        <relationship name="caringPeople" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CNPerson" inverseName="caringNodes" inverseEntity="CNPerson" syncable="YES"/>
+        <relationship name="who" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CNPerson" inverseName="plantedNodes" inverseEntity="CNPerson" syncable="YES"/>
     </entity>
     <entity name="CNPerson" representedClassName="CNPerson" syncable="YES">
         <attribute name="avatarURL" optional="YES" attributeType="String" syncable="YES"/>
@@ -23,6 +23,8 @@
         <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="timezone" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="updatedDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="caringNodes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CNNode" inverseName="caringPeople" inverseEntity="CNNode" syncable="YES"/>
+        <relationship name="plantedNodes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CNNode" inverseName="who" inverseEntity="CNNode" syncable="YES"/>
     </entity>
     <elements>
         <element name="CNNode" positionX="0" positionY="0" width="0" height="0"/>

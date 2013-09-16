@@ -7,6 +7,7 @@
 //
 
 #import "CNPerson.h"
+#import "CNNode.h"
 
 
 @implementation CNPerson
@@ -25,5 +26,7 @@
 @dynamic followersCount;
 @dynamic nodeCount;
 @dynamic externalId;
+@dynamic caringNodes;
+@dynamic plantedNodes;
 
 @end
