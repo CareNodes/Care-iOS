@@ -26,6 +26,11 @@
 		7683B7F217E7722300B4D96D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7683B7F017E7722300B4D96D /* Model.xcdatamodeld */; };
 		7683B7FE17E7797D00B4D96D /* CNNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683B7FD17E7797D00B4D96D /* CNNode.m */; };
 		7683B80717E77B0C00B4D96D /* CNPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683B80617E77B0C00B4D96D /* CNPerson.m */; };
+		7683B80B17E77DA500B4D96D /* CNLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683B80A17E77DA500B4D96D /* CNLoginViewController.m */; };
+		7683BC3917E7812900B4D96D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7683BC3817E7812900B4D96D /* CoreData.framework */; };
+		7683BC3B17E7813200B4D96D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7683BC3A17E7813200B4D96D /* CFNetwork.framework */; };
+		7683BC3D17E7813900B4D96D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7683BC3C17E7813900B4D96D /* Security.framework */; };
+		7683BC3F17E7814200B4D96D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7683BC3E17E7814200B4D96D /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,41 @@
 			proxyType = 1;
 			remoteGlobalIDString = 7683B7A517E76AE100B4D96D;
 			remoteInfo = Care;
+		};
+		7683BC3017E7811500B4D96D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7683BC2917E7811500B4D96D /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		7683BC3217E7811500B4D96D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7683BC2917E7811500B4D96D /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		7683BC3417E7811500B4D96D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7683BC2917E7811500B4D96D /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		7683BC3617E7811500B4D96D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7683BC2917E7811500B4D96D /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
+		};
+		7683BC4017E7814D00B4D96D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7683BC2917E7811500B4D96D /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160D1514564E810060A5C5;
+			remoteInfo = RestKit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -67,6 +107,13 @@
 		7683B7FD17E7797D00B4D96D /* CNNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNNode.m; sourceTree = "<group>"; };
 		7683B80517E77B0C00B4D96D /* CNPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNPerson.h; sourceTree = "<group>"; };
 		7683B80617E77B0C00B4D96D /* CNPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNPerson.m; sourceTree = "<group>"; };
+		7683B80917E77DA500B4D96D /* CNLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNLoginViewController.h; sourceTree = "<group>"; };
+		7683B80A17E77DA500B4D96D /* CNLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNLoginViewController.m; sourceTree = "<group>"; };
+		7683BC2917E7811500B4D96D /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
+		7683BC3817E7812900B4D96D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7683BC3A17E7813200B4D96D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		7683BC3C17E7813900B4D96D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7683BC3E17E7814200B4D96D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +121,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7683BC3F17E7814200B4D96D /* MobileCoreServices.framework in Frameworks */,
+				7683BC3D17E7813900B4D96D /* Security.framework in Frameworks */,
+				7683BC3B17E7813200B4D96D /* CFNetwork.framework in Frameworks */,
+				7683BC3917E7812900B4D96D /* CoreData.framework in Frameworks */,
 				7683B7AC17E76AE100B4D96D /* CoreGraphics.framework in Frameworks */,
 				7683B7AE17E76AE100B4D96D /* UIKit.framework in Frameworks */,
 				7683B7AA17E76AE100B4D96D /* Foundation.framework in Frameworks */,
@@ -96,8 +147,10 @@
 		7683B79D17E76AE100B4D96D = {
 			isa = PBXGroup;
 			children = (
-				7683B7E517E76BDE00B4D96D /* Vendor */,
 				7683B7AF17E76AE100B4D96D /* Care */,
+				7683B7E617E76BFF00B4D96D /* Resources */,
+				7683B80C17E780DA00B4D96D /* Vendor */,
+				7683B7B017E76AE100B4D96D /* Supporting Files */,
 				7683B7D117E76AE200B4D96D /* CareTests */,
 				7683B7A817E76AE100B4D96D /* Frameworks */,
 				7683B7A717E76AE100B4D96D /* Products */,
@@ -116,6 +169,10 @@
 		7683B7A817E76AE100B4D96D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7683BC3E17E7814200B4D96D /* MobileCoreServices.framework */,
+				7683BC3C17E7813900B4D96D /* Security.framework */,
+				7683BC3A17E7813200B4D96D /* CFNetwork.framework */,
+				7683BC3817E7812900B4D96D /* CoreData.framework */,
 				7683B7A917E76AE100B4D96D /* Foundation.framework */,
 				7683B7AB17E76AE100B4D96D /* CoreGraphics.framework */,
 				7683B7AD17E76AE100B4D96D /* UIKit.framework */,
@@ -127,13 +184,11 @@
 		7683B7AF17E76AE100B4D96D /* Care */ = {
 			isa = PBXGroup;
 			children = (
-				7683B7E617E76BFF00B4D96D /* Resources */,
 				7683B7E417E76BD100B4D96D /* Controller */,
 				7683B7E317E76BCC00B4D96D /* Model */,
 				7683B7E217E76BC600B4D96D /* View */,
 				7683B7B817E76AE100B4D96D /* CNAppDelegate.h */,
 				7683B7B917E76AE100B4D96D /* CNAppDelegate.m */,
-				7683B7B017E76AE100B4D96D /* Supporting Files */,
 			);
 			path = Care;
 			sourceTree = "<group>";
@@ -147,6 +202,7 @@
 				7683B7B717E76AE100B4D96D /* Care-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = Care;
 			sourceTree = "<group>";
 		};
 		7683B7D117E76AE200B4D96D /* CareTests */ = {
@@ -190,19 +246,12 @@
 			isa = PBXGroup;
 			children = (
 				7683B7BB17E76AE100B4D96D /* Main.storyboard */,
+				7683B80817E77D8F00B4D96D /* Login */,
 				7683B7FB17E7795A00B4D96D /* Me */,
 				7683B7FA17E7794F00B4D96D /* Touch */,
 				7683B7F917E7794500B4D96D /* Home */,
 			);
 			name = Controller;
-			sourceTree = "<group>";
-		};
-		7683B7E517E76BDE00B4D96D /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Vendor;
-			path = Care;
 			sourceTree = "<group>";
 		};
 		7683B7E617E76BFF00B4D96D /* Resources */ = {
@@ -211,6 +260,7 @@
 				7683B7C417E76AE100B4D96D /* Images.xcassets */,
 			);
 			name = Resources;
+			path = Care;
 			sourceTree = "<group>";
 		};
 		7683B7F917E7794500B4D96D /* Home */ = {
@@ -240,6 +290,34 @@
 			name = Me;
 			sourceTree = "<group>";
 		};
+		7683B80817E77D8F00B4D96D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7683B80917E77DA500B4D96D /* CNLoginViewController.h */,
+				7683B80A17E77DA500B4D96D /* CNLoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		7683B80C17E780DA00B4D96D /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				7683BC2917E7811500B4D96D /* RestKit.xcodeproj */,
+			);
+			path = Vendor;
+			sourceTree = SOURCE_ROOT;
+		};
+		7683BC2A17E7811500B4D96D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7683BC3117E7811500B4D96D /* libRestKit.a */,
+				7683BC3317E7811500B4D96D /* RestKitTests.octest */,
+				7683BC3517E7811500B4D96D /* RestKit.framework */,
+				7683BC3717E7811500B4D96D /* RestKitFrameworkTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -254,6 +332,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				7683BC4117E7814D00B4D96D /* PBXTargetDependency */,
 			);
 			name = Care;
 			productName = Care;
@@ -304,6 +383,12 @@
 			mainGroup = 7683B79D17E76AE100B4D96D;
 			productRefGroup = 7683B7A717E76AE100B4D96D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7683BC2A17E7811500B4D96D /* Products */;
+					ProjectRef = 7683BC2917E7811500B4D96D /* RestKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				7683B7A517E76AE100B4D96D /* Care */,
@@ -311,6 +396,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7683BC3117E7811500B4D96D /* libRestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKit.a;
+			remoteRef = 7683BC3017E7811500B4D96D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7683BC3317E7811500B4D96D /* RestKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.octest;
+			remoteRef = 7683BC3217E7811500B4D96D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7683BC3517E7811500B4D96D /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = 7683BC3417E7811500B4D96D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7683BC3717E7811500B4D96D /* RestKitFrameworkTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitFrameworkTests.octest;
+			remoteRef = 7683BC3617E7811500B4D96D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7683B7A417E76AE100B4D96D /* Resources */ = {
@@ -340,6 +456,7 @@
 			files = (
 				7683B7B617E76AE100B4D96D /* main.m in Sources */,
 				7683B7FE17E7797D00B4D96D /* CNNode.m in Sources */,
+				7683B80B17E77DA500B4D96D /* CNLoginViewController.m in Sources */,
 				7683B7EC17E76F5A00B4D96D /* CNTouchViewController.m in Sources */,
 				7683B7EF17E76F6900B4D96D /* CNMeViewController.m in Sources */,
 				7683B7E917E76F4800B4D96D /* CNHomeViewController.m in Sources */,
@@ -364,6 +481,11 @@
 			isa = PBXTargetDependency;
 			target = 7683B7A517E76AE100B4D96D /* Care */;
 			targetProxy = 7683B7CF17E76AE200B4D96D /* PBXContainerItemProxy */;
+		};
+		7683BC4117E7814D00B4D96D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = 7683BC4017E7814D00B4D96D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -475,6 +597,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Care/Care-Prefix.pch";
 				INFOPLIST_FILE = "Care/Care-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -488,6 +614,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Care/Care-Prefix.pch";
 				INFOPLIST_FILE = "Care/Care-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

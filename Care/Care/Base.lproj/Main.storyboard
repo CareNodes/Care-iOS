@@ -94,6 +94,24 @@
             </objects>
             <point key="canvasLocation" x="554" y="494"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="WG1-rv-vVP">
+            <objects>
+                <viewController id="9fj-F7-dFX" customClass="CNLoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dak-pX-9IS"/>
+                        <viewControllerLayoutGuide type="bottom" id="YZ7-KA-mgU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3m7-z8-KcT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eau-Uo-U1Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-493" y="494"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="eLw-pi-9uh">
             <objects>
@@ -112,7 +130,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mWl-Sa-31C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4" y="494"/>
+            <point key="canvasLocation" x="10" y="494"/>
         </scene>
         <!--Navigation Controller - Home-->
         <scene sceneID="gdC-vm-cgT">
