@@ -27,6 +27,7 @@
 @property (nonatomic, retain) NSNumber * followersCount;
 @property (nonatomic, retain) NSNumber * nodeCount;
 @property (nonatomic, retain) NSString * externalId;
+@property (nonatomic, retain) NSString * provider;
 @property (nonatomic, retain) NSSet *caringNodes;
 @property (nonatomic, retain) NSSet *plantedNodes;
 @end

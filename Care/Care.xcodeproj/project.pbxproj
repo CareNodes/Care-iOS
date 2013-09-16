@@ -25,7 +25,7 @@
 		7683B7EF17E76F6900B4D96D /* CNMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683B7EE17E76F6900B4D96D /* CNMeViewController.m */; };
 		7683B7F217E7722300B4D96D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7683B7F017E7722300B4D96D /* Model.xcdatamodeld */; };
 		7683B7FE17E7797D00B4D96D /* CNNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683B7FD17E7797D00B4D96D /* CNNode.m */; };
-		7683B80117E7797E00B4D96D /* CNPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683B80017E7797E00B4D96D /* CNPerson.m */; };
+		7683B80717E77B0C00B4D96D /* CNPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683B80617E77B0C00B4D96D /* CNPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +65,8 @@
 		7683B7F117E7722300B4D96D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		7683B7FC17E7797D00B4D96D /* CNNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNNode.h; sourceTree = "<group>"; };
 		7683B7FD17E7797D00B4D96D /* CNNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNNode.m; sourceTree = "<group>"; };
-		7683B7FF17E7797E00B4D96D /* CNPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNPerson.h; sourceTree = "<group>"; };
-		7683B80017E7797E00B4D96D /* CNPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNPerson.m; sourceTree = "<group>"; };
+		7683B80517E77B0C00B4D96D /* CNPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNPerson.h; sourceTree = "<group>"; };
+		7683B80617E77B0C00B4D96D /* CNPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,10 +177,10 @@
 		7683B7E317E76BCC00B4D96D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7683B7FF17E7797E00B4D96D /* CNPerson.h */,
-				7683B80017E7797E00B4D96D /* CNPerson.m */,
 				7683B7FC17E7797D00B4D96D /* CNNode.h */,
 				7683B7FD17E7797D00B4D96D /* CNNode.m */,
+				7683B80517E77B0C00B4D96D /* CNPerson.h */,
+				7683B80617E77B0C00B4D96D /* CNPerson.m */,
 				7683B7F017E7722300B4D96D /* Model.xcdatamodeld */,
 			);
 			name = Model;
@@ -343,7 +343,7 @@
 				7683B7EC17E76F5A00B4D96D /* CNTouchViewController.m in Sources */,
 				7683B7EF17E76F6900B4D96D /* CNMeViewController.m in Sources */,
 				7683B7E917E76F4800B4D96D /* CNHomeViewController.m in Sources */,
-				7683B80117E7797E00B4D96D /* CNPerson.m in Sources */,
+				7683B80717E77B0C00B4D96D /* CNPerson.m in Sources */,
 				7683B7BA17E76AE100B4D96D /* CNAppDelegate.m in Sources */,
 				7683B7F217E7722300B4D96D /* Model.xcdatamodeld in Sources */,
 			);

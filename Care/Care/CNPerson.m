@@ -26,6 +26,7 @@
 @dynamic followersCount;
 @dynamic nodeCount;
 @dynamic externalId;
+@dynamic provider;
 @dynamic caringNodes;
 @dynamic plantedNodes;
 
