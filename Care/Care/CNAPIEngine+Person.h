@@ -8,6 +8,7 @@
 
 #import "CNAPIEngine.h"
 
+@class CNAPIPersonAuthObject;
 @interface CNAPIEngine (Person)
 
 /**
@@ -15,12 +16,18 @@
  endpoint: /v1/people/signin
  method: POST
  */
+- (void)signinWithAuthObject:(CNAPIPersonAuthObject *)authObject
+                     success:(void (^)(void))successHandler
+                     failure:(void (^)(NSError *))failureHandler;
 
 /**
  SignUp
  endpoint: /v1/people/signup
  method: POST
  */
+- (void)signupWithAuthObject:(CNAPIPersonAuthObject *)authObject
+                     success:(void (^)(void))successHandler
+                     failure:(void (^)(NSError *))failureHandler;
 
 /**
  Profile

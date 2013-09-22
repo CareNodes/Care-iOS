@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76448C0C17EE058500ED18CB /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7683BC3117E7811500B4D96D /* libRestKit.a */; };
+		76448C1017EE8AB100ED18CB /* CNAPIPersonAuthObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 76448C0F17EE8AB100ED18CB /* CNAPIPersonAuthObject.m */; };
+		76448C1217EE8E6600ED18CB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76448C1117EE8E6600ED18CB /* SystemConfiguration.framework */; };
 		7683B7AA17E76AE100B4D96D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7683B7A917E76AE100B4D96D /* Foundation.framework */; };
 		7683B7AC17E76AE100B4D96D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7683B7AB17E76AE100B4D96D /* CoreGraphics.framework */; };
 		7683B7AE17E76AE100B4D96D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7683B7AD17E76AE100B4D96D /* UIKit.framework */; };
@@ -85,6 +88,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		76448C0B17EE036100ED18CB /* CNAPIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNAPIConfig.h; sourceTree = "<group>"; };
+		76448C0E17EE8AB100ED18CB /* CNAPIPersonAuthObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNAPIPersonAuthObject.h; sourceTree = "<group>"; };
+		76448C0F17EE8AB100ED18CB /* CNAPIPersonAuthObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNAPIPersonAuthObject.m; sourceTree = "<group>"; };
+		76448C1117EE8E6600ED18CB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7683B7A617E76AE100B4D96D /* Care.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Care.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7683B7A917E76AE100B4D96D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7683B7AB17E76AE100B4D96D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -140,6 +147,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76448C1217EE8E6600ED18CB /* SystemConfiguration.framework in Frameworks */,
+				76448C0C17EE058500ED18CB /* libRestKit.a in Frameworks */,
 				7683BC3F17E7814200B4D96D /* MobileCoreServices.framework in Frameworks */,
 				7683BC3D17E7813900B4D96D /* Security.framework in Frameworks */,
 				7683BC3B17E7813200B4D96D /* CFNetwork.framework in Frameworks */,
@@ -163,6 +172,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76448C0D17EE8A3200ED18CB /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				76448C0E17EE8AB100ED18CB /* CNAPIPersonAuthObject.h */,
+				76448C0F17EE8AB100ED18CB /* CNAPIPersonAuthObject.m */,
+			);
+			name = Object;
+			sourceTree = "<group>";
+		};
 		7683B79D17E76AE100B4D96D = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +206,7 @@
 		7683B7A817E76AE100B4D96D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				76448C1117EE8E6600ED18CB /* SystemConfiguration.framework */,
 				7683BC3E17E7814200B4D96D /* MobileCoreServices.framework */,
 				7683BC3C17E7813900B4D96D /* Security.framework */,
 				7683BC3A17E7813200B4D96D /* CFNetwork.framework */,
@@ -356,6 +375,8 @@
 		7683BC4617E782D400B4D96D /* API */ = {
 			isa = PBXGroup;
 			children = (
+				76448C0B17EE036100ED18CB /* CNAPIConfig.h */,
+				76448C0D17EE8A3200ED18CB /* Object */,
 				7683BC4A17E7833B00B4D96D /* CNAPIEngine.h */,
 				7683BC4B17E7833B00B4D96D /* CNAPIEngine.m */,
 				7683BC4D17E783B500B4D96D /* CNAPIEngine+Person.h */,
@@ -515,6 +536,7 @@
 				7683B80717E77B0C00B4D96D /* CNPerson.m in Sources */,
 				7683BC5517E7864700B4D96D /* CNSignupViewController.m in Sources */,
 				7683B7BA17E76AE100B4D96D /* CNAppDelegate.m in Sources */,
+				76448C1017EE8AB100ED18CB /* CNAPIPersonAuthObject.m in Sources */,
 				7683B7F217E7722300B4D96D /* Model.xcdatamodeld in Sources */,
 				7683BC5817E786C200B4D96D /* CNHomeDataSource.m in Sources */,
 			);
@@ -650,6 +672,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Care/Care-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
+				);
 				INFOPLIST_FILE = "Care/Care-Info.plist";
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -667,6 +694,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Care/Care-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
+				);
 				INFOPLIST_FILE = "Care/Care-Info.plist";
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -738,6 +770,7 @@
 				7683B7DD17E76AE200B4D96D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7683B7DE17E76AE200B4D96D /* Build configuration list for PBXNativeTarget "CareTests" */ = {
 			isa = XCConfigurationList;
@@ -746,6 +779,7 @@
 				7683B7E017E76AE200B4D96D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
