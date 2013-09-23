@@ -7,12 +7,27 @@
 //
 
 #import "CNAppDelegate.h"
+#import "CNAPIConfig.h"
+
+#import "CNAPIDefines.h"
+#import "CNLoginViewController.h"
 
 @implementation CNAppDelegate
 
+- (void)initRKObectManager {
+    AFHTTPClient *httpClient = [AFHTTPClient clientWithBaseURL:[NSURL URLWithString:API_URI]];
+    httpClient.parameterEncoding = AFJSONParameterEncoding;
+    RKObjectManager *sharedObjectManager = [[RKObjectManager alloc] initWithHTTPClient:httpClient];
+    [RKObjectManager setSharedManager:sharedObjectManager];
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    RKLogSetAppLoggingLevel(RKLogLevelDefault);
+    RKLogConfigureByName("RestKit/Network", RKLogLevelTrace);
+    
+    [self initRKObectManager];
+    
     return YES;
 }
 							
@@ -36,6 +51,25 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSString *userToken = [userDefaults valueForKey:@"token"];
+    if (userToken) {
+        
+    } else {
+        if (!self.loginViewController) {
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            self.loginViewController = [storyboard instantiateViewControllerWithIdentifier:[CNLoginViewController storyboardId]];
+        } else {
+            [self.loginViewController reset];
+        }
+        
+        if (!self.loginViewController.presentingViewController) {
+            [self.window.rootViewController presentViewController:self.loginViewController
+                                                         animated:NO
+                                                       completion:nil];
+        }
+    }
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

@@ -34,7 +34,6 @@
 		7683BC3B17E7813200B4D96D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7683BC3A17E7813200B4D96D /* CFNetwork.framework */; };
 		7683BC3D17E7813900B4D96D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7683BC3C17E7813900B4D96D /* Security.framework */; };
 		7683BC3F17E7814200B4D96D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7683BC3E17E7814200B4D96D /* MobileCoreServices.framework */; };
-		7683BC4917E7830700B4D96D /* CNModelBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683BC4817E7830700B4D96D /* CNModelBridge.m */; };
 		7683BC4C17E7833B00B4D96D /* CNAPIEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683BC4B17E7833B00B4D96D /* CNAPIEngine.m */; };
 		7683BC4F17E783B500B4D96D /* CNAPIEngine+Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683BC4E17E783B500B4D96D /* CNAPIEngine+Person.m */; };
 		7683BC5217E783C800B4D96D /* CNAPIEngine+Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683BC5117E783C800B4D96D /* CNAPIEngine+Node.m */; };
@@ -92,6 +91,7 @@
 		76448C0E17EE8AB100ED18CB /* CNAPIPersonAuthObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNAPIPersonAuthObject.h; sourceTree = "<group>"; };
 		76448C0F17EE8AB100ED18CB /* CNAPIPersonAuthObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNAPIPersonAuthObject.m; sourceTree = "<group>"; };
 		76448C1117EE8E6600ED18CB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		76448C1317EE914E00ED18CB /* CNAPIDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNAPIDefines.h; sourceTree = "<group>"; };
 		7683B7A617E76AE100B4D96D /* Care.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Care.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7683B7A917E76AE100B4D96D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7683B7AB17E76AE100B4D96D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -127,8 +127,6 @@
 		7683BC3A17E7813200B4D96D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		7683BC3C17E7813900B4D96D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		7683BC3E17E7814200B4D96D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		7683BC4717E7830700B4D96D /* CNModelBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNModelBridge.h; sourceTree = "<group>"; };
-		7683BC4817E7830700B4D96D /* CNModelBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNModelBridge.m; sourceTree = "<group>"; };
 		7683BC4A17E7833B00B4D96D /* CNAPIEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNAPIEngine.h; sourceTree = "<group>"; };
 		7683BC4B17E7833B00B4D96D /* CNAPIEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNAPIEngine.m; sourceTree = "<group>"; };
 		7683BC4D17E783B500B4D96D /* CNAPIEngine+Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CNAPIEngine+Person.h"; sourceTree = "<group>"; };
@@ -264,7 +262,6 @@
 		7683B7E317E76BCC00B4D96D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7683BC4517E782C200B4D96D /* Model Bridge */,
 				7683BC4417E782A800B4D96D /* Entitiy */,
 			);
 			name = Model;
@@ -363,18 +360,10 @@
 			name = Entitiy;
 			sourceTree = "<group>";
 		};
-		7683BC4517E782C200B4D96D /* Model Bridge */ = {
-			isa = PBXGroup;
-			children = (
-				7683BC4717E7830700B4D96D /* CNModelBridge.h */,
-				7683BC4817E7830700B4D96D /* CNModelBridge.m */,
-			);
-			name = "Model Bridge";
-			sourceTree = "<group>";
-		};
 		7683BC4617E782D400B4D96D /* API */ = {
 			isa = PBXGroup;
 			children = (
+				76448C1317EE914E00ED18CB /* CNAPIDefines.h */,
 				76448C0B17EE036100ED18CB /* CNAPIConfig.h */,
 				76448C0D17EE8A3200ED18CB /* Object */,
 				7683BC4A17E7833B00B4D96D /* CNAPIEngine.h */,
@@ -524,7 +513,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7683B7B617E76AE100B4D96D /* main.m in Sources */,
-				7683BC4917E7830700B4D96D /* CNModelBridge.m in Sources */,
 				7683BC4F17E783B500B4D96D /* CNAPIEngine+Person.m in Sources */,
 				7683BC5217E783C800B4D96D /* CNAPIEngine+Node.m in Sources */,
 				7683B7FE17E7797D00B4D96D /* CNNode.m in Sources */,

@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class CNLoginViewController;
 @interface CNAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) CNLoginViewController *loginViewController;
 
 @end

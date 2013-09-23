@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <RestKit/RestKit.h>
-
 
 @interface CNAPIEngine : NSObject
+
+@property (nonatomic, strong) NSString *userToken;
 
 + (instancetype)defaultEngine;
 

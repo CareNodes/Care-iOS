@@ -10,4 +10,14 @@
 
 @interface CNLoginViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *idTextField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
+@property (weak, nonatomic) IBOutlet UIButton *signupButton;
+
++ (NSString *)storyboardId;
+- (void)reset;
+
+- (IBAction)loginButtonPressed:(id)sender;
+
 @end

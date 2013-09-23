@@ -13,26 +13,41 @@
 @implementation CNAPIEngine (Person)
 
 - (void)signinWithAuthObject:(CNAPIPersonAuthObject *)authObject
-                     success:(void (^)(void))successHandler
+                     success:(void (^)(NSString *token))successHandler
                      failure:(void (^)(NSError *))failureHandler {
     NSParameterAssert(authObject);
     
     NSDictionary *param = [authObject signInDictionaryValue];
     NSString *endPoint = @"/v1/people/signin";
     
-    [[RKObjectManager sharedManager] postObject:nil
-                                           path:endPoint
-                                     parameters:param
-                                        success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult){
-                                            if (successHandler) {
-                                                successHandler();
-                                            }
-                                        }
-                                        failure:^(RKObjectRequestOperation *operation, NSError *error){
-                                            if (failureHandler) {
-                                                failureHandler(error);
-                                            }
-                                        }];
+    [[RKObjectManager sharedManager].HTTPClient postPath:endPoint
+                                              parameters:param
+                                                 success:^(AFHTTPRequestOperation *operation, id responseObject){
+                                                     NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:responseObject
+                                                                                                                  options:NSJSONReadingMutableContainers
+                                                                                                                    error:nil];
+                                                     
+                                                     NSString *token = [responseDict valueForKey:@"token"];
+                                                     self.userToken = token;
+                                                     
+                                                     [[NSUserDefaults standardUserDefaults] setValue:token forKey:@"token"];
+                                                     [[NSUserDefaults standardUserDefaults] synchronize];
+                                                     
+                                                     if (successHandler) {
+                                                         successHandler(token);
+                                                     }
+                                                 }
+                                                 failure:^(AFHTTPRequestOperation *operatoin, NSError *error){
+                                                     if (failureHandler) {
+                                                         failureHandler(error);
+                                                     }
+                                                     
+                                                     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                                                                         message:[NSString stringWithFormat:@"%@", error]
+                                                                                                        delegate:nil
+                                                                                               cancelButtonTitle:@"好吧" otherButtonTitles:nil];
+                                                     [alertView show];
+                                                 }];
 }
 
 - (void)signupWithAuthObject:(CNAPIPersonAuthObject *)authObject
@@ -43,19 +58,24 @@
     NSDictionary *param = [authObject signUpDictionaryValue];
     NSString *endPoint = @"/v1/people/signup";
     
-    [[RKObjectManager sharedManager] postObject:nil
-                                           path:endPoint
-                                     parameters:param
-                                        success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult){
-                                            if (successHandler) {
-                                                successHandler();
-                                            }
-                                        }
-                                        failure:^(RKObjectRequestOperation *operation, NSError *error){
-                                            if (failureHandler) {
-                                                failureHandler(error);
-                                            }
-                                        }];
+    [[RKObjectManager sharedManager].HTTPClient postPath:endPoint
+                                              parameters:param
+                                                 success:^(AFHTTPRequestOperation *operation, id responseObject){
+                                                     if (successHandler) {
+                                                         successHandler();
+                                                     }
+                                                 }
+                                                 failure:^(AFHTTPRequestOperation *operatoin, NSError *error){
+                                                     if (failureHandler) {
+                                                         failureHandler(error);
+                                                     }
+                                                     
+                                                     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                                                                         message:[NSString stringWithFormat:@"%@", error]
+                                                                                                        delegate:nil
+                                                                                               cancelButtonTitle:@"好吧" otherButtonTitles:nil];
+                                                     [alertView show];
+                                                 }];
 }
 
 @end

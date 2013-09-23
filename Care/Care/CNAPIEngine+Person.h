@@ -17,7 +17,7 @@
  method: POST
  */
 - (void)signinWithAuthObject:(CNAPIPersonAuthObject *)authObject
-                     success:(void (^)(void))successHandler
+                     success:(void (^)(NSString *token))successHandler
                      failure:(void (^)(NSError *))failureHandler;
 
 /**
