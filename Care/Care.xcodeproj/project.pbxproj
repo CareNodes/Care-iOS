@@ -10,6 +10,7 @@
 		76448C0C17EE058500ED18CB /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7683BC3117E7811500B4D96D /* libRestKit.a */; };
 		76448C1017EE8AB100ED18CB /* CNAPIPersonAuthObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 76448C0F17EE8AB100ED18CB /* CNAPIPersonAuthObject.m */; };
 		76448C1217EE8E6600ED18CB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76448C1117EE8E6600ED18CB /* SystemConfiguration.framework */; };
+		76448C9017F0B16100ED18CB /* CNPlantNodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76448C8F17F0B16100ED18CB /* CNPlantNodeViewController.m */; };
 		7683B7AA17E76AE100B4D96D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7683B7A917E76AE100B4D96D /* Foundation.framework */; };
 		7683B7AC17E76AE100B4D96D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7683B7AB17E76AE100B4D96D /* CoreGraphics.framework */; };
 		7683B7AE17E76AE100B4D96D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7683B7AD17E76AE100B4D96D /* UIKit.framework */; };
@@ -92,6 +93,8 @@
 		76448C0F17EE8AB100ED18CB /* CNAPIPersonAuthObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNAPIPersonAuthObject.m; sourceTree = "<group>"; };
 		76448C1117EE8E6600ED18CB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		76448C1317EE914E00ED18CB /* CNAPIDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNAPIDefines.h; sourceTree = "<group>"; };
+		76448C8E17F0B16100ED18CB /* CNPlantNodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNPlantNodeViewController.h; sourceTree = "<group>"; };
+		76448C8F17F0B16100ED18CB /* CNPlantNodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNPlantNodeViewController.m; sourceTree = "<group>"; };
 		7683B7A617E76AE100B4D96D /* Care.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Care.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7683B7A917E76AE100B4D96D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7683B7AB17E76AE100B4D96D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -177,6 +180,15 @@
 				76448C0F17EE8AB100ED18CB /* CNAPIPersonAuthObject.m */,
 			);
 			name = Object;
+			sourceTree = "<group>";
+		};
+		76448C8D17F0B14A00ED18CB /* Plant */ = {
+			isa = PBXGroup;
+			children = (
+				76448C8E17F0B16100ED18CB /* CNPlantNodeViewController.h */,
+				76448C8F17F0B16100ED18CB /* CNPlantNodeViewController.m */,
+			);
+			name = Plant;
 			sourceTree = "<group>";
 		};
 		7683B79D17E76AE100B4D96D = {
@@ -270,6 +282,7 @@
 		7683B7E417E76BD100B4D96D /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				76448C8D17F0B14A00ED18CB /* Plant */,
 				7683B7BB17E76AE100B4D96D /* Main.storyboard */,
 				7683B80817E77D8F00B4D96D /* Signup && Login */,
 				7683B7FB17E7795A00B4D96D /* Me */,
@@ -523,6 +536,7 @@
 				7683B7E917E76F4800B4D96D /* CNHomeViewController.m in Sources */,
 				7683B80717E77B0C00B4D96D /* CNPerson.m in Sources */,
 				7683BC5517E7864700B4D96D /* CNSignupViewController.m in Sources */,
+				76448C9017F0B16100ED18CB /* CNPlantNodeViewController.m in Sources */,
 				7683B7BA17E76AE100B4D96D /* CNAppDelegate.m in Sources */,
 				76448C1017EE8AB100ED18CB /* CNAPIPersonAuthObject.m in Sources */,
 				7683B7F217E7722300B4D96D /* Model.xcdatamodeld in Sources */,

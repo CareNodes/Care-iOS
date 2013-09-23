@@ -8,6 +8,7 @@
 
 #import "CNAPIEngine.h"
 
+@class CNNode;
 @interface CNAPIEngine (Node)
 
 /**
@@ -25,6 +26,9 @@
  endpoint: /v1/nodes
  method: post / put
  */
+- (void)plantANode:(CNNode *)node
+           success:(void (^)(void))successHandler
+           failure:(void (^)(void))failureHandler;
 
 /**
  Care A Node

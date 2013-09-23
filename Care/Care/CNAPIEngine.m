@@ -28,8 +28,6 @@
         self.userToken = userToken;
     }
     
-    NSDate
-    
     return self;
 }
 

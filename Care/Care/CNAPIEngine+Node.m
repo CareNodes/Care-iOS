@@ -10,4 +10,9 @@
 
 @implementation CNAPIEngine (Node)
 
+- (void)plantANode:(CNNode *)node
+           success:(void (^)(void))successHandler
+           failure:(void (^)(void))failureHandler {
+}
+
 @end
