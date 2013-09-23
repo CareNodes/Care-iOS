@@ -20,4 +20,17 @@
     return s_engine;
 }
 
+- (id)init {
+    self = [super init];
+    if (self) {
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        NSString *userToken = [userDefaults valueForKey:@"token"];
+        self.userToken = userToken;
+    }
+    
+    NSDate
+    
+    return self;
+}
+
 @end

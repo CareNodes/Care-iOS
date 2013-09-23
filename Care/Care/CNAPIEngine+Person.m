@@ -27,7 +27,7 @@
                                                                                                                   options:NSJSONReadingMutableContainers
                                                                                                                     error:nil];
                                                      
-                                                     NSString *token = [responseDict valueForKey:@"token"];
+                                                     NSString *token = [[responseDict valueForKey:@"data"] valueForKey:@"token"];
                                                      self.userToken = token;
                                                      
                                                      [[NSUserDefaults standardUserDefaults] setValue:token forKey:@"token"];
