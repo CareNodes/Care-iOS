@@ -59,7 +59,7 @@
                                     <!--2013-09-23 17:30:16 +0000-->
                                 </date>
                                 <timeZone key="timeZone" name="America/Los_Angeles">
-                                    <mutableData key="data">
+                                    <data key="data">
 VFppZgAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAC5AAAABAAAABCepkign7sVkKCGKqChmveQ
 y4kaoNIj9HDSYSYQ1v50INiArZDa/tGg28CQENzes6DdqayQ3r6VoN+JjpDgnneg4WlwkOJ+WaDjSVKQ
 5F47oOUpNJDmR1gg5xJREOgnOiDo8jMQ6gccIOrSFRDr5v4g7LH3EO3G4CDukdkQ76/8oPBxuxDxj96g
@@ -77,7 +77,7 @@ f5gqkAABAAECAwEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
-</mutableData>
+</data>
                                 </timeZone>
                             </datePicker>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pmc-gE-pKv">
@@ -134,7 +134,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <outlet property="delegate" destination="vS7-Iw-mPJ" id="DOg-e8-1lv"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Me" id="Cta-zn-Dqy"/>
+                    <tabBarItem key="tabBarItem" title="Me" image="tabbar_me.png" id="Cta-zn-Dqy"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nug-GF-xdm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -163,7 +163,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <outlet property="delegate" destination="3ef-IG-4dl" id="1Ik-bY-nu4"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Touch" id="Z3n-kF-OvS"/>
+                    <tabBarItem key="tabBarItem" title="Touch" image="tabbar_touch.png" id="Z3n-kF-OvS"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJq-4z-9zS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -321,7 +321,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <scene sceneID="gdC-vm-cgT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cji-Xh-grj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="Yrd-u5-NdW"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="tabbar_home@.png" id="Yrd-u5-NdW"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="B1X-iI-u10">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -355,6 +355,11 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <point key="canvasLocation" x="-485" y="-1327"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tabbar_home@.png" width="30" height="30"/>
+        <image name="tabbar_me.png" width="30" height="30"/>
+        <image name="tabbar_touch.png" width="30" height="30"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

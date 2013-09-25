@@ -11,6 +11,9 @@
 		76448C1017EE8AB100ED18CB /* CNAPIPersonAuthObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 76448C0F17EE8AB100ED18CB /* CNAPIPersonAuthObject.m */; };
 		76448C1217EE8E6600ED18CB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76448C1117EE8E6600ED18CB /* SystemConfiguration.framework */; };
 		76448C9017F0B16100ED18CB /* CNPlantNodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76448C8F17F0B16100ED18CB /* CNPlantNodeViewController.m */; };
+		76448CB417F2A15B00ED18CB /* tabbar_home@@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76448CB117F2A15B00ED18CB /* tabbar_home@@2x.png */; };
+		76448CB517F2A15B00ED18CB /* tabbar_me@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76448CB217F2A15B00ED18CB /* tabbar_me@2x.png */; };
+		76448CB617F2A15B00ED18CB /* tabbar_touch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76448CB317F2A15B00ED18CB /* tabbar_touch@2x.png */; };
 		7683B7AA17E76AE100B4D96D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7683B7A917E76AE100B4D96D /* Foundation.framework */; };
 		7683B7AC17E76AE100B4D96D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7683B7AB17E76AE100B4D96D /* CoreGraphics.framework */; };
 		7683B7AE17E76AE100B4D96D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7683B7AD17E76AE100B4D96D /* UIKit.framework */; };
@@ -95,6 +98,9 @@
 		76448C1317EE914E00ED18CB /* CNAPIDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNAPIDefines.h; sourceTree = "<group>"; };
 		76448C8E17F0B16100ED18CB /* CNPlantNodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNPlantNodeViewController.h; sourceTree = "<group>"; };
 		76448C8F17F0B16100ED18CB /* CNPlantNodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNPlantNodeViewController.m; sourceTree = "<group>"; };
+		76448CB117F2A15B00ED18CB /* tabbar_home@@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_home@@2x.png"; sourceTree = "<group>"; };
+		76448CB217F2A15B00ED18CB /* tabbar_me@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_me@2x.png"; sourceTree = "<group>"; };
+		76448CB317F2A15B00ED18CB /* tabbar_touch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_touch@2x.png"; sourceTree = "<group>"; };
 		7683B7A617E76AE100B4D96D /* Care.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Care.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7683B7A917E76AE100B4D96D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7683B7AB17E76AE100B4D96D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -191,6 +197,16 @@
 			name = Plant;
 			sourceTree = "<group>";
 		};
+		76448CB017F2A15B00ED18CB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				76448CB117F2A15B00ED18CB /* tabbar_home@@2x.png */,
+				76448CB217F2A15B00ED18CB /* tabbar_me@2x.png */,
+				76448CB317F2A15B00ED18CB /* tabbar_touch@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		7683B79D17E76AE100B4D96D = {
 			isa = PBXGroup;
 			children = (
@@ -282,12 +298,12 @@
 		7683B7E417E76BD100B4D96D /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				76448C8D17F0B14A00ED18CB /* Plant */,
 				7683B7BB17E76AE100B4D96D /* Main.storyboard */,
+				76448C8D17F0B14A00ED18CB /* Plant */,
 				7683B80817E77D8F00B4D96D /* Signup && Login */,
-				7683B7FB17E7795A00B4D96D /* Me */,
-				7683B7FA17E7794F00B4D96D /* Touch */,
 				7683B7F917E7794500B4D96D /* Home */,
+				7683B7FA17E7794F00B4D96D /* Touch */,
+				7683B7FB17E7795A00B4D96D /* Me */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -295,6 +311,7 @@
 		7683B7E617E76BFF00B4D96D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				76448CB017F2A15B00ED18CB /* Images */,
 				7683B7C417E76AE100B4D96D /* Images.xcassets */,
 			);
 			name = Resources;
@@ -504,8 +521,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76448CB417F2A15B00ED18CB /* tabbar_home@@2x.png in Resources */,
 				7683B7C517E76AE100B4D96D /* Images.xcassets in Resources */,
 				7683B7B417E76AE100B4D96D /* InfoPlist.strings in Resources */,
+				76448CB517F2A15B00ED18CB /* tabbar_me@2x.png in Resources */,
+				76448CB617F2A15B00ED18CB /* tabbar_touch@2x.png in Resources */,
 				7683B7BD17E76AE100B4D96D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
